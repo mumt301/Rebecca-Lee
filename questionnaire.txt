@@ -1,4 +1,6 @@
 MUMT301-2021 Assignment 1
+Rebecca Lee
+Sept 20, 2021
 QUESTIONNAIRE!
 
 The following questionnaire seeks to understand your previous knowledge about some of the concepts that we will learn in class during the coming term.
@@ -23,7 +25,9 @@ The following questionnaire seeks to understand your previous knowledge about so
 
 5. Expand the following acronyms and do research about their meaning. You may look them up if you don't know:
 
-    HTTP: Hypertext Transfer Protocol;  
+    HTTP: Hypertext Transfer Protocol; HTTP is an application protocol for various media and information systems that gives users the ability
+       to communicate data online and across the world through the web.
+  
     REST: Representational State Transfer
     API: Application Programming Interfaace
 
@@ -41,7 +45,18 @@ The following questionnaire seeks to understand your previous knowledge about so
 
 8. How large is your personal music collection? Estimate the number of artists, albums, and songs. If instead you listen to music using streaming services, how many playlists, artists, albums, and songs do you have in your account?
 
+	I believe that my personal music collection is on the small side.
+	   Playlists: ~15
+	   Artists: ~100
+	   Albums: 200+
+	   Songs: ~1000 (or more)
+
 9. How do you search and find new music?
+	
+	To search and find new music, I often ask friends for recommendation for new pieces to to.
+	Other ways that I find music, would be to look through various syllabi for instruments and listen to the pieces that
+	are listed there.  If I am listening to music on YouTube, I can also look at the suggestions and recommendations
+	of the next piece or playlist of music to play.  I have also come to realized that being in various ensembles have also helped broaden my scope of music and allows for me to find music through those ensembles too.	
 
 11. Are you aware of any ways in which artists are dealing with public performances post-COVID? Do you think live performances are essential to your musical experience?
 
