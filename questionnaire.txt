@@ -1,30 +1,75 @@
-MUMT301-2021 Assignment 1
-QUESTIONNAIRE!
+Last login: Wed Sep 15 20:11:40 on ttys001
+rebecca@Rebeccas-MacBook-Pro ~ % ls
+Applications		Library			Pictures
+Desktop			Local Data		Public
+Documents		Movies			eclipse
+Downloads		Music			eclipse-workspace
+rebecca@Rebeccas-MacBook-Pro ~ % Documents
+zsh: command not found: Documents
+rebecca@Rebeccas-MacBook-Pro ~ % cd Documents
+rebecca@Rebeccas-MacBook-Pro Documents % ls
+ARCT Theory Exams
+CRCCO Exam
+MUMT 301
+McGill T4A
+MuseScore3
+Schubert s die liebe hat gelogen The deception of mode and mixture.pdf
+Scores
+Zoom
+rebecca@Rebeccas-MacBook-Pro Documents % cd MUMT\ 301
+rebecca@Rebeccas-MacBook-Pro MUMT 301 % nano questionnaire.txt
 
-The following questionnaire seeks to understand your previous knowledge about some of the concepts that we will learn in class during the coming term.
 
-1. Do you know any programming languages? If you do, which ones?
 
-2. What is your primary computer operating system (OS)?
 
-3. Do you own a smartphone, tablet, or mobile device? What is your favourite OS for mobile devices?
 
-4. Do you use any social networking services? If you do, which ones? Why?
 
-5. Expand the following acronyms and do research about their meaning. You may look them up if you don't know:
 
-    HTTP
-    REST    
-    API
 
-6. Do you play a musical instrument or sing? If so, how much experience do you have?
 
-7. Can you read music notation? If so, how well?
 
-8. How large is your personal music collection? Estimate the number of artists, albums, and songs. If instead you listen to music using streaming services, how many playlists, artists, albums, and songs do you have in your account?
 
-9. How do you search and find new music?
 
-11. Are you aware of any ways in which artists are dealing with public performances post-COVID? Do you think live performances are essential to your musical experience?
 
-12. Name two musical artists that you like. What do you find interesting about their music that makes you like them?
+
+
+
+
+
+
+  GNU nano 2.0.6                    File: questionnaire.txt                                    Modified  
+
+1.  Yes, I do know Python and Java, but just the basics of the language.
+
+2.  Primary computer operating system is MacOS X.
+
+3.  I own a smartphone and a tablet.  My favourite OS for smartphone would be Android.  However, for tab$
+
+4.  Yes, I do use social networking services. I primarily use Skype, Discord, Facebook, Messenger, Snapc$
+
+5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help      ^O WriteOut      ^R Read File     ^Y Prev Page     ^K Cut Text      ^C Cur Pos
+^X Exit          ^J Justify       ^W Where Is      ^V Next Page     ^U UnCut Text    ^T To Spell
