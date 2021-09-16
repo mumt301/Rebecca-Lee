@@ -13,11 +13,13 @@ The following questionnaire seeks to understand your previous knowledge about so
 
 3. Do you own a smartphone, tablet, or mobile device? What is your favourite OS for mobile devices?
 
-	I own a smartphone and a tablet.  My favourite OS for mobile devices is Android.  However, for tablets, I much prefer iOS because of its efficiency when working with a Mac for a laptop.
+	I own a smartphone and a tablet.  My favourite OS for mobile devices is Android. 
+	However, for tablets, I much prefer iOS because of its efficiency when working with a Mac for a laptop.
 
 4. Do you use any social networking services? If you do, which ones? Why?
 
-	Social networking services that I use are Skype, Facebook, Messenger, Snapchat, Discord, Whatsapp.  I use them because they are convenient ways of communicating with others.  The various platforms are for the various type and age groups of people that use different platforms.
+	Social networking services that I use are Skype, Facebook, Messenger, Snapchat, Discord, Whatsapp. 
+	I use them because they are convenient ways of communicating with others.  The various platforms are for the various type and age groups of people that use different platforms.
 
 5. Expand the following acronyms and do research about their meaning. You may look them up if you don't know:
 
@@ -27,12 +29,27 @@ The following questionnaire seeks to understand your previous knowledge about so
 
 6. Do you play a musical instrument or sing? If so, how much experience do you have?
 
+	I can play a few musical instruments and sing.
+	   Piano: played for 16 years, did RCM exams and other competitions
+	   Organ: current major, played for ~5 years, did competitions
+	   Euphonium/Baritone: played in highschool band for 4 years
+	   Can also play trombone and sing.
+
 7. Can you read music notation? If so, how well?
+
+	Yes, I can read music notation.  I believe that I am proficient at reading music notation in the trele and bass clefs, and can read alto and tenor clefs at a much slower speed.
 
 8. How large is your personal music collection? Estimate the number of artists, albums, and songs. If instead you listen to music using streaming services, how many playlists, artists, albums, and songs do you have in your account?
 
 9. How do you search and find new music?
 
 11. Are you aware of any ways in which artists are dealing with public performances post-COVID? Do you think live performances are essential to your musical experience?
+
+	Although I am not particularly aware of ways in which artists are dealing with public performances post-COVID. 
+	As a musician myself, I know that for public performances, they are often live-streamed or recorded and premiered at a later date for the audience to enjoy.
+	Personally, I believe that live performances are essential to my musical experience, both as a performer and a listener.
+	I feel that live performances creates a better ambience and experience for the listener. Live performances are also more enjoyable for the perfomer too,
+	as live performances allow for the performer to more easily interact with the audience and to thoroughly enjoy performing.
+	
 
 12. Name two musical artists that you like. What do you find interesting about their music that makes you like them?
