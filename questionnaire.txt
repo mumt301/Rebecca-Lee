@@ -5,17 +5,25 @@ The following questionnaire seeks to understand your previous knowledge about so
 
 1. Do you know any programming languages? If you do, which ones?
 
+	For programming languages, I know the basics of Python and Java.
+
 2. What is your primary computer operating system (OS)?
+
+	My primary computer operating system is MacOS.
 
 3. Do you own a smartphone, tablet, or mobile device? What is your favourite OS for mobile devices?
 
+	I own a smartphone and a tablet.  My favourite OS for mobile devices is Android.  However, for tablets, I much prefer iOS because of its efficiency when working with a Mac for a laptop.
+
 4. Do you use any social networking services? If you do, which ones? Why?
+
+	Social networking services that I use are Skype, Facebook, Messenger, Snapchat, Discord, Whatsapp.  I use them because they are convenient ways of communicating with others.  The various platforms are for the various type and age groups of people that use different platforms.
 
 5. Expand the following acronyms and do research about their meaning. You may look them up if you don't know:
 
-    HTTP
-    REST    
-    API
+    HTTP: Hypertext Transfer Protocol;  
+    REST: Representational State Transfer
+    API: Application Programming Interfaace
 
 6. Do you play a musical instrument or sing? If so, how much experience do you have?
 
