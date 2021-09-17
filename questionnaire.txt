@@ -26,10 +26,13 @@ The following questionnaire seeks to understand your previous knowledge about so
 5. Expand the following acronyms and do research about their meaning. You may look them up if you don't know:
 
     HTTP: Hypertext Transfer Protocol; HTTP is an application protocol for various media and information systems that gives users the ability
-       to communicate data online and across the world through the web.
+       to communicate data online and across the world through the web (World Wide Web).
   
-    REST: Representational State Transfer
-    API: Application Programming Interfaace
+    REST: Representational State Transfer; REST is a large-scale network software that benefits from the various technologies and protocols of the World Wide Web.
+       It is based on how data structure/objects and resources and be distributed and adressed.  It also stresses on its ease to exchange information and its scalability.
+
+    API: Application Programming Interface; API's primary function is to simplify software development through its ability for data and functionlity to
+       be exhanged noth easily and securely.  API allows for users to be able to easily comminucate with other services and software programs.
 
 6. Do you play a musical instrument or sing? If so, how much experience do you have?
 
@@ -53,7 +56,7 @@ The following questionnaire seeks to understand your previous knowledge about so
 
 9. How do you search and find new music?
 	
-	To search and find new music, I often ask friends for recommendation for new pieces to to.
+	To search and find new music, I often ask friends for recommendation for new pieces to listen to.
 	Other ways that I find music, would be to look through various syllabi for instruments and listen to the pieces that
 	are listed there.  If I am listening to music on YouTube, I can also look at the suggestions and recommendations
 	of the next piece or playlist of music to play.  I have also come to realized that being in various ensembles have also helped broaden my scope of music and allows for me to find music through those ensembles too.	
@@ -68,3 +71,13 @@ The following questionnaire seeks to understand your previous knowledge about so
 	
 
 12. Name two musical artists that you like. What do you find interesting about their music that makes you like them?
+	
+	Claude Debussy: Debussy's music is often in a realm of its own. I love how its expressivity, colours and ambience often always reflects 
+	   the title of the piece or gives a whimsical sense.  I also find Debussy's incorporation of scales, folk tunes, cultures, and traditions of 
+	   other countries to be effective in generating a unique distinction of Debussy's pieces from other Impressionistic composers.  His mix of 
+	   blues and sometimes jazz also gives a certain degree of familiarity and catchiness to some of his more playful and fun pieces.
+	J.S. Bach: Although Bach's music is often quite dificult to play and perform due to its complex counterpoint, it is also the counterpoint and harmonies that I find interesting in Bach's
+	   music.  For example, in his fugues, he starts off with the initial subject in one of the voices.  It is then expanded and altered to "answer" the subject in a different voice.
+	   All the while, the other voices have a second melody or harmonic progressions that fit in perfectly well with the "answer".  Basically, not only does Bach's music sound very good melodically,
+	   the richness and complexities of the harmonies also enhance the piece and it is the harmonies and counterpoint that draws me to his music.
+ 
