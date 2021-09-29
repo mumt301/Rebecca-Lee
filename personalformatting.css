@@ -2,7 +2,7 @@ img {
     width: 250px;
     height: 200px;
     border-style: double;
-    border-width: 15px;
+    border-width: 10px;
 }
 
 h1 {
@@ -10,5 +10,5 @@ h1 {
 }
 
 body {
-    background-image: radial-gradient(50);
+    background-color: lightskyblue;
 }
