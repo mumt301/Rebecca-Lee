@@ -2,4 +2,13 @@ img {
     width: 250px;
     height: 200px;
     border-style: double;
+    border-width: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-image: radial-gradient(50);
 }
