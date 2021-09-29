@@ -3,6 +3,9 @@ img {
     height: 200px;
     border-style: double;
     border-width: 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1 {
