@@ -1,14 +1,14 @@
 .column {
-    float: center;
-    height: 100%;
+    float: left;
+    height: auto;
     width: 30%;
     text-align: center;
     background-color: bisque;
-}
-
-#name {
-    font-size: 65px;
+    color: rgb(47, 216, 25);
     text-transform: capitalize;
+    h4 {
+        color: black;
+    }
 }
 
 body {
@@ -19,8 +19,4 @@ body {
 audio {
     height: 0px;
     width: 0px;
-}
-
-h4 {
-    color: black;
 }
