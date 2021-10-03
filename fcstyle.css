@@ -6,6 +6,7 @@
 
 body {
     background-image: url(https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/2014/02/25/4.jpg?itok=wrZVZ9id);
+    background-size: cover;
 }
 
 audio {
