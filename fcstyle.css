@@ -1,22 +1,26 @@
 .column {
     float: center;
-    height: 100vh;
+    height: 100%;
     width: 30%;
     text-align: center;
-    color: bisque;
+    background-color: bisque;
 }
 
-.name {
+#name {
     font-size: 65px;
     text-transform: capitalize;
 }
 
 body {
     background-image: url(https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/2014/02/25/4.jpg?itok=wrZVZ9id);
-    background-size: auto;
+    background-size: cover;
 }
 
 audio {
     height: 0px;
     width: 0px;
+}
+
+h4 {
+    color: black;
 }
