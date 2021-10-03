@@ -1,12 +1,19 @@
 .column {
     float: center;
     height: 100vh;
-    width: 50%;
+    width: 30%;
+    text-align: center;
+    color: bisque;
+}
+
+.name {
+    font-size: 65px;
+    text-transform: capitalize;
 }
 
 body {
     background-image: url(https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/2014/02/25/4.jpg?itok=wrZVZ9id);
-    background-size: cover;
+    background-size: auto;
 }
 
 audio {
