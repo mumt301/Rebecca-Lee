@@ -1,8 +1,13 @@
 .column {
     float: left;
-    height: 100%;
+    height: 100vh;
 }
 
 #c1 {
     background-color: mistyrose;
+}
+
+audio {
+    height: 0px;
+    width: 0px;
 }
