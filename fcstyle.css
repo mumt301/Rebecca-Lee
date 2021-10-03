@@ -1,8 +1,7 @@
-.column1 {
+.column {
     float: left;
-    background-color: mistyrose;
 }
 
-.column2 {
-    float: right;
+#c1 {
+    background-color: mistyrose;
 }
