@@ -1,19 +1,117 @@
 .column {
-    float: left;
-    height: auto;
-    width: 30%;
+    padding-top: 50px;
+    height: 85vh;
+    width: 20%;
     text-align: center;
-    background-color: bisque;
-    color: black;
-    text-transform: capitalize;
+    background: rgba(255, 228, 196, 0.8);
+    color: #000060;
+    border-radius: 10px;
+    margin: 0px;
+    position: fixed;
+    left: 10%;
+    top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
+.middle {
+    vertical-align: middle;
+}
+
+.home-links {
+    color: #000060;
+    font-size: 18pt;
+}
+
+.main {
     background-image: url(https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/2014/02/25/4.jpg?itok=wrZVZ9id);
+    background-size: cover;
+}
+
+.pages {
+    background-image: url(https://image.freepik.com/free-vector/pink-bokeh-background_53876-94132.jpg);
     background-size: cover;
 }
 
 audio {
     height: 0px;
     width: 0px;
+}
+
+h1 {
+    font-size: 45pt;
+    margin: 0px;
+}
+
+.float {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+}
+
+.menu {
+    background: #c04000;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+    box-shadow: 5px 5px 12px gray;
+    margin-bottom: 30px;
+    text-align: left;
+    position: fixed;
+    top: 5px;
+}
+
+.home-menu {
+    font-size: 8pt;
+    text-align: center;
+    color: white;
+}
+
+.as-text {
+    background: none;
+    border: none;
+}
+
+.selected {
+    background: rgba(255, 228, 196, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.body-text {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #fafafa;
+    color: #000060;
+    border-radius: 10px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 5px 5px 12px gray;
+}
+
+h2 {
+    text-align: center;
+}
+
+.menu-cell {
+    height: 25px;
+    background-color: white;
+}
+
+.inline-container {
+    width: 100%;
+}
+
+.inline-container>div {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
 }

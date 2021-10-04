@@ -4,16 +4,46 @@
 <head>
     <meta charset="utf-8">
     <title>MUSIC</title>
-    <link rel="stylesheet" href="personalformatting.css">
+    <link rel="stylesheet" href="fcstyle.css">
 </head>
 
-<body>
-    <h2>Music</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Caot-M3j81w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-    <iframe src="https://open.spotify.com/embed/album/3YeqiM5emvV37csN40wC3Q" width="300" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<body class="pages">
+    <div class="container">
 
-    <a href="fav_composer.html"> Return</a>
+        <!-- Menu -->
+        <div class="menu" style="position: relative">
+            <table>
+                <tr>
+                    <td style="width: 100%">
+                        <a href="fav_composer.html"><button class="as-text home-menu"><img src="piano.png"" width=43px height=36px><br />Home</button></a>
+                    </td>
+                    <td>
+                        <a href="fc_bio.html"><button class="as-text">Biography</button></a>
+                    </td>
+                    <td>
+                        <a href="fc_disco.html"><button class="as-text">Discography</button></a>
+                    </td>
+                    <td>
+                        <a href="fc_music.html"><button class="as-text selected">Music</button></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
+        <!-- Body paragraph -->
+        <div class="body-text">
+            <h2>Music</h2>
+            <center>
+                <div style="width: 85%; text-align: left; text-align: center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PwUzcp279ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Nvb6eRI5WM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jsR30ThEJYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NwySgv42VLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe src="https://open.spotify.com/embed/album/3YeqiM5emvV37csN40wC3Q" width="300" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </center>
+        </div>
+    </div>
 </body>
 
 </html>
