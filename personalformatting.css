@@ -8,11 +8,21 @@ img {
     margin-left: auto;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+p,
+.info {
     text-align: center;
 }
 
 body {
     background-image: url(https://image.freepik.com/free-vector/pink-bokeh-background_53876-94132.jpg);
     background-size: cover;
+}
+
+a:link,
+a:visited {
+    color: black;
 }
