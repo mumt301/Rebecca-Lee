@@ -1,0 +1,36 @@
+body {
+    background-image: url(https://image.freepik.com/free-vector/pink-bokeh-background_53876-94132.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #000060;
+    text-shadow: 2px 2px 3px #52055c93;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+th,
+td {
+    width: 11.1111111%;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    color: #000060;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12pt;
+}
+
+p {
+    text-align: right;
+}
+
+a:visited,
+a:link {
+    color: #000060;
+}
