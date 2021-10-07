@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 4
+    </title>
+    <link rel="stylesheet" href="personalformatting.css">
+</head>
+
+<body>
+    <h1>Comparison of Audio Compression Methods</h1>
+    <table id="a4table">
+        <tr>
+            <th>Filename</th>
+            <th>Compression Algorithm</th>
+            <th>Bit-rate (kbps)</th>
+            <th>Original Size (KB)</th>
+            <th>Compressed Size (KB)</th>
+            <th>Compression Ratio</th>
+            <th>Link to Original Audio</th>
+            <th>Link to Compressed Audio</th>
+            <th>Link to Residual Audio</th>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>MP3</td>
+            <td>96</td>
+            <td>2000</td>
+            <td>265</td>
+            <td>0.13</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-96.mp3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-96-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>MP3</td>
+            <td>128</td>
+            <td>2000</td>
+            <td>338</td>
+            <td>0.17</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-128.mp3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-128-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>MP3</td>
+            <td>192</td>
+            <td>2000</td>
+            <td>456</td>
+            <td>0.23</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-192.mp3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-192-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>MP3</td>
+            <td>320</td>
+            <td>2000</td>
+            <td>490</td>
+            <td>0.25</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-320.mp3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-320-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>Ogg/Vorbis</td>
+            <td>Low Quality</td>
+            <td>2000</td>
+            <td>108</td>
+            <td>0.05</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-1.ogg">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-1-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>Ogg/Vorbis</td>
+            <td>Low-Mid Quality</td>
+            <td>2000</td>
+            <td>116</td>
+            <td>0.06</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-3.ogg">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-3-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>Ogg/Vorbis</td>
+            <td>High-Mid Quality</td>
+            <td>2000</td>
+            <td>171</td>
+            <td>0.09</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-6.ogg">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-6-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>Ogg/Vorbis</td>
+            <td>High Quality</td>
+            <td>2000</td>
+            <td>294</td>
+            <td>0.15</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-9.ogg">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-9-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>AC3</td>
+            <td>96</td>
+            <td>2000</td>
+            <td>268</td>
+            <td>0.13</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-96.ac3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-96-ac3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>AC3</td>
+            <td>128</td>
+            <td>2000</td>
+            <td>358</td>
+            <td>0.18</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-128.ac3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-128-ac3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>AC3</td>
+            <td>192</td>
+            <td>2000</td>
+            <td>537</td>
+            <td>0.27</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-192.ac3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-192-ac3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>AC3</td>
+            <td>320</td>
+            <td>2000</td>
+            <td>894</td>
+            <td>0.45</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-320.ac3">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-96-320.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>M4A/AAC</td>
+            <td>98</td>
+            <td>2000</td>
+            <td>360</td>
+            <td>0.18</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-98.m4a">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-98-m4a.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>M4A/AAC</td>
+            <td>128</td>
+            <td>2000</td>
+            <td>370</td>
+            <td>0.19</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-128.m4a">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-128-m4a.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>M4A/AAC</td>
+            <td>192</td>
+            <td>2000</td>
+            <td>399</td>
+            <td>0.20</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-192.m4a">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-192-m4a.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>Bluebeat</td>
+            <td>M4A/AAC</td>
+            <td>320</td>
+            <td>2000</td>
+            <td>390</td>
+            <td>0.20</td>
+            <td><a href="bb1/bb1.wav">Original Audio</a></td>
+            <td><a href="bb1/bb1-320.m4a">Compressed Audio</a></td>
+            <td><a href="bb1/bb1-320-m4a.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>MP3</td>
+            <td>96</td>
+            <td>669</td>
+            <td>85</td>
+            <td>0.13</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-96.mp3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-96-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>MP3</td>
+            <td>128</td>
+            <td>669</td>
+            <td>113</td>
+            <td>0.17</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-128.mp3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-128-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>MP3</td>
+            <td>192</td>
+            <td>669</td>
+            <td>174</td>
+            <td>0.26</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-192.mp3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-192-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>MP3</td>
+            <td>320</td>
+            <td>669</td>
+            <td>287</td>
+            <td>0.43</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-320.mp3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-320-mp3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>Ogg/Vorbis</td>
+            <td>Low Quality</td>
+            <td>669</td>
+            <td>62</td>
+            <td>0.09</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-1.ogg">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-1-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>Ogg/Vorbis</td>
+            <td>Low-Mid Quality</td>
+            <td>669</td>
+            <td>73</td>
+            <td>0.11</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-3.ogg">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-3-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>Ogg/Vorbis</td>
+            <td>High-Mid Quality</td>
+            <td>669</td>
+            <td>103</td>
+            <td>0.15</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-6.ogg">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-6-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>Ogg/Vorbis</td>
+            <td>High Quality</td>
+            <td>669</td>
+            <td>160</td>
+            <td>0.23</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-9.ogg">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-9-ogg.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>AC3</td>
+            <td>96</td>
+            <td>669</td>
+            <td>91</td>
+            <td>0.13</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-96.ac3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-96-ac3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>AC3</td>
+            <td>128</td>
+            <td>669</td>
+            <td>121</td>
+            <td>0.18</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-128.ac3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-128-ac3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>AC3</td>
+            <td>192</td>
+            <td>669</td>
+            <td>182</td>
+            <td>0.27</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-192.ac3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-192-ac3.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>AC3</td>
+            <td>320</td>
+            <td>669</td>
+            <td>304</td>
+            <td>0.45</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-320.ac3">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-96-320.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>M4A/AAC</td>
+            <td>98</td>
+            <td>669</td>
+            <td>167</td>
+            <td>0.25</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-98.m4a">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-98-m4a.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>M4A/AAC</td>
+            <td>128</td>
+            <td>669</td>
+            <td>181</td>
+            <td>0.27</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-128.m4a">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-128-m4a.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>M4A/AAC</td>
+            <td>192</td>
+            <td>669</td>
+            <td>178</td>
+            <td>0.27</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-192.m4a">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-192-m4a.wav">Residual Audio</a></td>
+        </tr>
+
+        <tr>
+            <td>We Wish You A Merry Christmas</td>
+            <td>M4A/AAC</td>
+            <td>320</td>
+            <td>669</td>
+            <td>189</td>
+            <td>0.28</td>
+            <td><a href="wwyamc/wwyamc.wav">Original Audio</a></td>
+            <td><a href="wwyamc/wwyamc-320.m4a">Compressed Audio</a></td>
+            <td><a href="wwyamc/wwyamc-320-m4a.wav">Residual Audio</a></td>
+        </tr>
+    </table>
+    <script>
+        function createTable() {
+            let table = document.createElement('table');
+            table.id = a4table;
+            for (r = 0; r < a4table.length; r++) {
+                tr = document.createElement('tr');
+                let col = Object.keys(a4table[r])
+                for (c = 0; c < column.length; c++) {
+                    td = document.createElement('td');
+                    tr.appendChild.td;
+                    td.innerHTML = a4table[r][col[c]];
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
