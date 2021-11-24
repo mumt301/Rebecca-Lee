@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Theremin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="a7.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.js"></script>
+    <script src="a7.js" type="text/JavaScript"></script>
+    <script src="a7_aux_functions.js" type="text/JavaScript"></script>
+</head>
+
+<body>
+    <h1>Web-Based Musical Instrument</h1>
+    <a href="index.html">Rebecca's Homepage</a><br>
+    <a href="assignments.html">Rebecca's Assignments</a><br><br>
+    <div id="thereminZone"></div>
+
+
+    <p id="frequency"></p>
+    <p id="note"></p>
+
+    <p id="frequency2"></p>
+    <p id="note2"></p>
+
+    <form method="get" id="info">
+
+        <label for="semitones">Interval in number of semitones:</label>
+        <input type="text" name="interval" id="semitones" value="0">
+
+        <label for="osctype">Wave Type</label>
+        <select name="wavetype" id="wavetype">
+            <option value="sine">Sine</option>
+            <option value="square">Square</option>
+            <option value="triangle">Triangle</option>
+            <option value="sawtooth">Sawtooth</option>
+         </select>
+        <input type="submit" value="Update theremin">
+
+    </form>
+</body>
+
+</html>
