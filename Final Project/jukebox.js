@@ -67,10 +67,13 @@ let songFiles = {
 let coins = 0;
 let cS = false;
 let cM = false;
+let mode = false;
 let playing = false;
 let music = new Audio();
 let songQueue = [];
 let songlist = []; // for Playlist mode only
+
+//make sure mode is selected
 
 function clickS() {
     //changes color of the buttons
@@ -83,6 +86,8 @@ function clickS() {
     let multiples = document.getElementById('multiple');
     multiples.style.backgroundColor = "#efeff5";
     cM = false;
+
+    mode = true;
 }
 
 function clickM() {
@@ -96,35 +101,45 @@ function clickM() {
     multiples.style.backgroundColor = "#ffcc80";
     display.innerHTML = "Multi-Track mode selected";
     cM = true;
+
+    mode = true;
 }
 
 function insertCoin() {
-    let display = document.getElementById('display');
-    if (cS == true) {
-        if (coins < 1) {
-            coins += 1;
-            display.innerHTML = "Select a song"
-        } else {
-            display.innerHTML = "Coin already inserted, select a song"
-        }
-    } else {
-        if (coins < 10) {
-            coins += 1;
-            console.log("Coins: " + coins);
-            display.innerHTML = "Select " + coins + " song"
-        } else {
-            display.innerHTML = "Coin total maxed, select 10 song"
+    if (mode == true) {
+        if (playing == false) {
+            let display = document.getElementById('display');
+            if (cS == true) {
+                if (coins < 1) {
+                    coins += 1;
+                    display.innerHTML = "Select a song"
+                } else {
+                    display.innerHTML = "Coin already inserted, select a song"
+                }
+            } else {
+                if (coins < 10) {
+                    coins += 1;
+                    console.log("Coins: " + coins);
+                    display.innerHTML = "Select " + coins + " song"
+                } else {
+                    display.innerHTML = "Coin total maxed, select 10 song"
+                }
+            }
         }
     }
 }
 
 function returnCoin() {
-    let display = document.getElementById('display');
-    if (coins == 0) {
-        display.innerHTML = "No coins to return"
-    } else {
-        coins = 0;
-        display.innerHTML = "All coins returned, insert a coin to select a song"
+    if (mode == true) {
+        if (playing == false) {
+            let display = document.getElementById('display');
+            if (coins == 0) {
+                display.innerHTML = "No coins to return"
+            } else {
+                coins = 0;
+                display.innerHTML = "All coins returned, insert a coin to select a song"
+            }
+        }
     }
 }
 
@@ -134,71 +149,85 @@ function coinDisplay() { //currently unused
 }
 
 function randomTrack(min, max) {
-    let key = Math.floor(Math.random() * (max - min)) + min;
-    showDisplay(key);
+    if (mode == true) {
+        let key = Math.floor(Math.random() * (max - min)) + min;
+        showDisplay(key);
+    }
 }
 
 function showDisplay(id) {
-    let display = document.getElementById('display');
-    if (coins == 0) {
-        display.innerHTML = "Insert a coin to select a song"
-    } else {
-        let value = parseInt(id);
-        display.innerHTML = songNames[value]
-        songQueue.push(id);
-        console.log(songQueue);
+    if (mode == true) {
+        let display = document.getElementById('display');
+        if (coins == 0) {
+            display.innerHTML = "Insert a coin to select a song"
+        } else {
+            let value = parseInt(id);
+            display.innerHTML = songNames[value]
+            songQueue.push(id);
+            console.log(songQueue);
+        }
     }
 }
 
 function playAudio() {
-    if (playing == false && songQueue != []) {
-        if (cM == true) {
-            let start = songQueue.length - coins;
-            let queue = [];
-            for (start; start < songQueue.length; start++) {
-                queue.push(songQueue[start]);
-                console.log(queue);
-                songlist = queue;
-            }
-            playQueue(queue);
-        } else {
-            let display = document.getElementById('display');
-            if (coins == 0) {
-                display.innerHTML = "Insert a coin to select a song";
+    if (mode == true) {
+        if (playing == false && songQueue != []) {
+            if (cM == true) {
+                if (songQueue != []) {
+                    let start = songQueue.length - coins;
+                    if (songQueue.length < coins) {
+                        start = 0;
+                    }
+                    let queue = [];
+                    for (start; start < songQueue.length; start++) {
+                        queue.push(songQueue[start]);
+                        console.log(queue);
+                        songlist = queue;
+                    }
+                    playQueue();
+                }
             } else {
-                let lastSelected = songQueue[songQueue.length - 1];
-                value = parseInt(lastSelected);
-                // if (playing == false)
-                music = new Audio(songFiles[value]);
-                display.innerHTML = songNames[value];
-                counter = -1;
-                coins = 0;
-                playing = true;
-                console.log(playing);
-                music.play();
-                music.onended = function() {
-                    playing = false;
+                let display = document.getElementById('display');
+                if (coins == 0) {
+                    display.innerHTML = "Insert a coin to select a song";
+                } else {
+                    let lastSelected = songQueue[songQueue.length - 1];
+                    value = parseInt(lastSelected);
+                    // if (playing == false)
+                    music = new Audio(songFiles[value]);
+                    display.innerHTML = songNames[value];
+                    counter = -1;
+                    coins = 0;
+                    playing = true;
                     console.log(playing);
-                    songQueue = [];
-                };
+                    music.play();
+                    music.onended = function() {
+                        playing = false;
+                        console.log(playing);
+                        songQueue = [];
+                    };
+                }
             }
         }
     }
 }
 
 function playQueue() {
-    let display = document.getElementById('display');
-    if (songlist.length != 0) {
-        let value = parseInt(songlist.shift());
-        console.log(songlist);
-        music = new Audio(songFiles[value]);
-        display.innerHTML = songNames[value];
-        music.play();
-        playing = true;
-        music.onended = function() {
-            playQueue(songlist);
-        };
-        playing = false;
+    if (playing == false) {
+        let display = document.getElementById('display');
+        if (songlist.length != 0) {
+            let value = parseInt(songlist.shift());
+            console.log(songlist);
+            music = new Audio(songFiles[value]);
+            display.innerHTML = songNames[value];
+            music.play();
+            playing = true;
+            music.onended = function() {
+                playing = false;
+                playQueue();
+                songlist = [];
+            };
+        }
     }
 }
 
@@ -206,6 +235,7 @@ function stopAudio() {
     music.pause();
     playing = false;
     songQueue = [];
+    songlist = [];
     coins = 0;
     console.log(songQueue);
     let display = document.getElementById('display');
@@ -214,5 +244,7 @@ function stopAudio() {
 
 function nextSong() {
     music.pause();
-    playQueue(songlist);
+    playing = false;
+    playQueue();
+    songQueue = [];
 }
