@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Christmas Jukebox</title>
+    <script src="jukebox.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="jukebox.css">
+</head>
+
+<body>
+    <h1>Jukebox</h1>
+    <button id="single" onclick="clickS()">Single</button>
+    <button id="multiple" onclick="clickM()">Playlist</button>
+    <button id="coinI" onclick="insertCoin()">Coin</button>
+    <div>
+        <p id="numCoins"></p>
+    </div>
+    <button id="coinR" onclick="returnCoin()">Return</button>
+    <button id="play" onclick="playAudio()">Play</button>
+    <button id="stop" onclick="stopAudio()">Stop</button>
+    <button id="random" onclick="randomTrack(0, 30)">Random Track</button>
+    <button id="next" onclick="nextSong()">Skip Song</button>
+    <div>
+        <p id="display">Select mode to start</p>
+    </div>
+
+
+    <div id="songs" class="flex-container">
+        <div><button id="00" onclick="showDisplay(id)">00 Have Yourself A Merry Little Christmas</button></div>
+        <div><button id="01" onclick="showDisplay(id)">01 I Heard the Bells on Christmas Day</button></div>
+        <div><button id="02" onclick="showDisplay(id)">02 So this Is Christmas</button></div>
+        <div><button id="03" onclick="showDisplay(id)">03 Jingle Bells</button></div>
+        <div><button id="04" onclick="showDisplay(id)">04 Santa Claus is Coming to Town</button></div>
+        <div><button id="05" onclick="showDisplay(id)">05 The Christmas Song (Chestnuts Roasting)</button></div>
+        <div><button id="06" onclick="showDisplay(id)">06 Silent Night</button></div>
+        <div><button id="07" onclick="showDisplay(id)">07 The Eight Polish Foods of Christmas</button></div>
+        <div><button id="08" onclick="showDisplay(id)">08 Oh Santa!</button></div>
+        <div><button id="09" onclick="showDisplay(id)">09 O Holy Night</button></div>
+        <div><button id="10" onclick="showDisplay(id)">10 God Rest Ye Merry Gentlemen</button></div>
+        <div><button id="11" onclick="showDisplay(id)">11 Let It Snow</button></div>
+        <div><button id="12" onclick="showDisplay(id)">12 Sleigh Ride</button></div>
+        <div><button id="13" onclick="showDisplay(id)">13 We Wish You A Merry Christmas</button></div>
+        <div><button id="14" onclick="showDisplay(id)">14 Deck the Halls</button></div>
+        <div><button id="15" onclick="showDisplay(id)">15 Joy to the World</button></div>
+        <div><button id="16" onclick="showDisplay(id)">16 White Christmas</button></div>
+        <div><button id="17" onclick="showDisplay(id)">17 Ruldolph the Red-Nosed Reindeer</button></div>
+        <div><button id="18" onclick="showDisplay(id)">18 Blue Christmas</button></div>
+        <div><button id="19" onclick="showDisplay(id)">19 Silver Bells</button></div>
+        <div><button id="20" onclick="showDisplay(id)">20 Twelve Days of Christmas</button></div>
+        <div><button id="21" onclick="showDisplay(id)">21 Can't Believe It's Christmas</button></div>
+        <div><button id="22" onclick="showDisplay(id)">22 Feliz Navidad</button></div>
+        <div><button id="23" onclick="showDisplay(id)">23 Winter Wonderland</button></div>
+        <div><button id="24" onclick="showDisplay(id)">24 Carol of the Bells</button></div>
+        <div><button id="25" onclick="showDisplay(id)">25 Peace on Earth</button></div>
+        <div><button id="26" onclick="showDisplay(id)">26 Frosty the Snowman</button></div>
+        <div><button id="27" onclick="showDisplay(id)">27 Here Comes Santa Claus</button></div>
+        <div><button id="28" onclick="showDisplay(id)">28 The Night Before Christmas</button></div>
+        <div><button id="29" onclick="showDisplay(id)">29 The Chipmunk Song (Christmas Don't Be Late)</button></div>
+
+    </div>
+
+</body>
+
+</html>
