@@ -73,8 +73,6 @@ let music = new Audio();
 let songQueue = [];
 let songlist = []; // for Playlist mode only
 
-//make sure mode is selected
-
 function clickS() {
     //changes color of the buttons
     let display = document.getElementById('display');
@@ -157,14 +155,16 @@ function randomTrack(min, max) {
 
 function showDisplay(id) {
     if (mode == true) {
-        let display = document.getElementById('display');
-        if (coins == 0) {
-            display.innerHTML = "Insert a coin to select a song"
-        } else {
-            let value = parseInt(id);
-            display.innerHTML = songNames[value]
-            songQueue.push(id);
-            console.log(songQueue);
+        if (playing == false) {
+            let display = document.getElementById('display');
+            if (coins == 0) {
+                display.innerHTML = "Insert a coin to select a song"
+            } else {
+                let value = parseInt(id);
+                display.innerHTML = songNames[value]
+                songQueue.push(id);
+                console.log(songQueue);
+            }
         }
     }
 }
@@ -223,6 +223,7 @@ function playQueue() {
             music.play();
             playing = true;
             music.onended = function() {
+                coins--;
                 playing = false;
                 playQueue();
                 songlist = [];
@@ -232,18 +233,21 @@ function playQueue() {
 }
 
 function stopAudio() {
-    music.pause();
-    playing = false;
-    songQueue = [];
-    songlist = [];
-    coins = 0;
-    console.log(songQueue);
-    let display = document.getElementById('display');
-    display.innerHTML = " ";
+    if (playing == true) {
+        music.pause();
+        playing = false;
+        songQueue = [];
+        songlist = [];
+        coins = 0;
+        console.log(songQueue);
+        let display = document.getElementById('display');
+        display.innerHTML = " ";
+    }
 }
 
 function nextSong() {
     music.pause();
+    coins--;
     playing = false;
     playQueue();
     songQueue = [];
