@@ -161,7 +161,7 @@ function showDisplay(id) {
                 display.innerHTML = "Insert a coin to select a song"
             } else {
                 let value = parseInt(id);
-                display.innerHTML = songNames[value]
+                display.innerHTML = songNames[value];
                 songQueue.push(id);
                 console.log(songQueue);
             }
@@ -204,6 +204,7 @@ function playAudio() {
                     music.onended = function() {
                         playing = false;
                         console.log(playing);
+                        display.innerHTML = "";
                         songQueue = [];
                     };
                 }
@@ -240,8 +241,6 @@ function stopAudio() {
         songlist = [];
         coins = 0;
         console.log(songQueue);
-        let display = document.getElementById('display');
-        display.innerHTML = " ";
     }
 }
 

@@ -1,11 +1,24 @@
 .functions {
     height: 5%;
+    width: 3%;
     border-radius: 15%;
     border: black;
     border-width: 2px;
     border-style: double;
     background-color: #efeff5;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+/* display */
+
+
+/* height: 5%; */
+
+
+/* background-color: #f2d9d9;   #e6f0ff; */
 
 td {
     border: black;
@@ -13,48 +26,121 @@ td {
     height: 5%;
     border-width: 2px;
     border-style: solid;
-    /* padding-top: auto;
-    padding-bottom: auto; */
     border-radius: 45px;
-    text-align: center;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgb(255, 208, 208);
+    font-size: 120%;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
-    /* background-color: #ffebe6; */
-    background-color: antiquewhite;
-    width: 90%;
-    height: 75%;
-    border: darkseagreen;
+    /* background-color: rgb(206, 206, 206); */
+    background-color: rgb(153, 152, 152);
+    width: 65%;
+    height: 50%;
+    border: #663300;
     border-width: 2px;
     border-style: solid;
     border-collapse: separate;
     border-spacing: 10px;
+    border-radius: 10px;
 }
 
 .names {
     border-radius: 45px;
-    text-align: left;
-    width: 99%;
-    height: 95%;
-    font-size: 20px;
-    overflow: hidden;
-    white-space: nowrap;
+    text-align: center;
+    /* width: 99%;
+    height: 95%; */
+    height: 90%;
+    width: 10%;
     /* background-color: #ffebe6;*/
     border: black;
     border-width: 2px;
     border-style: double;
-    background-color: #efeff5;
+    /* background-color: #efeff5; */
+    background-color: rgb(12, 155, 7);
+    white-space: nowrap;
+    margin-right: 1%;
+    margin-left: 1%;
+    color: white;
 }
 
 #display {
-    border: #cc0000;
+    border: #663300;
     border-width: 2px;
     border-style: solid;
-    background-color: #f2d9d9;
-    width: 90%;
-    height: 5%;
+    background-color: seashell;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    /* padding-left: 1%; */
+    font-size: 120%;
 }
+
+
+/* #play,
+#stop,
+#next {
+    position: relative;
+    left: 39%;
+    bottom: 1%;
+    height: 8%;
+    width: 6%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+} */
+
+#play,
+#stop,
+#next {
+    position: relative;
+    left: 39%;
+    top: 2%;
+    height: 8%;
+    width: 6%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+}
+
+
+/* .inner {
+    border: #663300;
+    width: 60%;
+    height: 75%;
+    border-width: 2px;
+    border-style: solid;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #d2a679;
+    border-radius: 10px;
+    column-count: 3;
+} */
+
+body {
+    background-image: url(https://www.chelmsforddogassociation.org/media_uploads/snowflakes.gif);
+    background-size: cover;
+}
+
+
+/* .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    flex-direction: column;
+    height: 50%;
+    width: 70%;
+}
+
+.flex-container>div {
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+} */
