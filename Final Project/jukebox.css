@@ -144,3 +144,10 @@ body {
     text-align: center;
     line-height: 75px;
 } */
+
+.title {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-top: 1%;
+}

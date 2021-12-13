@@ -103,10 +103,13 @@ function clickM() {
     mode = true;
 }
 
+
 function insertCoin() {
     if (mode == true) {
         if (playing == false) {
             let display = document.getElementById('display');
+            let coin = document.getElementById('coinI');
+            coin.style.backgroundColor = "#ffcc80";
             if (cS == true) {
                 if (coins < 1) {
                     coins += 1;
@@ -134,6 +137,8 @@ function returnCoin() {
             if (coins == 0) {
                 display.innerHTML = "No coins to return"
             } else {
+                let coin = document.getElementById('coinI');
+                coin.style.backgroundColor = "#efeff5";
                 coins = 0;
                 display.innerHTML = "All coins returned, insert a coin to select a song"
             }
@@ -141,10 +146,6 @@ function returnCoin() {
     }
 }
 
-function coinDisplay() { //currently unused
-    let coinD = document.getElementById('numCoins');
-    coinD.innerHTML = coins;
-}
 
 function randomTrack(min, max) {
     if (mode == true) {
@@ -206,6 +207,8 @@ function playAudio() {
                         console.log(playing);
                         display.innerHTML = "";
                         songQueue = [];
+                        let coin = document.getElementById('coinI');
+                        coin.style.backgroundColor = "#efeff5"; // to fix
                     };
                 }
             }
@@ -228,6 +231,10 @@ function playQueue() {
                 playing = false;
                 playQueue();
                 songlist = [];
+                if (coins == 0) {
+                    let coin = document.getElementById('coinI');
+                    coin.style.backgroundColor = "#efeff5";
+                }
             };
         }
     }
@@ -240,14 +247,22 @@ function stopAudio() {
         songQueue = [];
         songlist = [];
         coins = 0;
+        let coin = document.getElementById('coinI');
+        coin.style.backgroundColor = "#efeff5";
         console.log(songQueue);
     }
 }
 
 function nextSong() {
-    music.pause();
-    coins--;
-    playing = false;
-    playQueue();
-    songQueue = [];
+    if (cM == true) {
+        music.pause();
+        coins--;
+        playing = false;
+        playQueue();
+        songQueue = [];
+        if (coins == 0) {
+            let coin = document.getElementById('coinI');
+            coin.style.backgroundColor = "#efeff5";
+        }
+    }
 }
