@@ -4,81 +4,82 @@
     <meta charset="utf-8" />
     <title>Christmas Jukebox</title>
     <script src="jukebox.js" type="text/JavaScript"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
     <link rel="stylesheet" href="jukebox.css">
 </head>
 
 <body>
     <img src="Christmas Jukebox.png" width="60%" class="title"><br>
-
-    <button id="single" onclick="clickS()" class="functions">Single</button>
-    <button id="multiple" onclick="clickM()" class="functions">Playlist</button>
-
-    <p id="display">Select mode to start</p>
-    <button id="play" onclick="playAudio()" class="functions"> <img src="https://image.flaticon.com/icons/png/512/98/98795.png" width="60%" height="80%"></button>
-    <button id="stop" onclick="stopAudio()" class="functions"> <img src="https://static.vecteezy.com/system/resources/previews/001/209/957/non_2x/square-png.png" width="70%" height="80%"></button>
-    <button id="next" onclick="nextSong()" class="functions"><img src="http://cdn.onlinewebfonts.com/svg/img_516158.png" width="60%" height="80%"></button>
-
-    <table id="songs" class="songLabels">
+    <table class="functions">
         <tr>
-            <td><button id="00" onclick="showDisplay(id)" class="names">00</button> Have Yourself A Merry Little Christmas</td>
-            <td><button id="10" onclick="showDisplay(id)" class="names">10</button> God Rest Ye Merry Gentlemen</td>
-            <td><button id="20" onclick="showDisplay(id)" class="names">20</button> Twelve Days of Christmas</td>
-        </tr>
-        <tr>
-            <td><button id="01" onclick="showDisplay(id)" class="names">01</button> I Heard the Bells on Christmas Day</td>
-            <td><button id="11" onclick="showDisplay(id)" class="names">11</button> Let It Snow</td>
-            <td><button id="21" onclick="showDisplay(id)" class="names">21</button> Can't Believe It's Christmas</td>
-        </tr>
-        <tr>
-            <td><button id="02" onclick="showDisplay(id)" class="names">02</button> So This Is Christmas</td>
-            <td><button id="12" onclick="showDisplay(id)" class="names">12</button> Sleigh Ride</td>
-            <td><button id="22" onclick="showDisplay(id)" class="names">22</button> Feliz Navidad</td>
-        </tr>
-        <tr>
-            <td><button id="03" onclick="showDisplay(id)" class="names">03</button> Jingle Bells</td>
-            <td><button id="13" onclick="showDisplay(id)" class="names">13</button> We Wish You A Merry Christmas</td>
-            <td><button id="23" onclick="showDisplay(id)" class="names">23</button> Winter Wonderland</td>
-        </tr>
-        <tr>
-            <td><button id="04" onclick="showDisplay(id)" class="names">04</button> Santa Claus Is Coming to Town</td>
-            <td><button id="14" onclick="showDisplay(id)" class="names">14</button> Deck the Halls</td>
-            <td><button id="24" onclick="showDisplay(id)" class="names">24</button> Carol of the Bells</td>
-        </tr>
-        <tr>
-            <td><button id="05" onclick="showDisplay(id)" class="names">05</button> The Christmas Song (Chestnuts Roasting)</td>
-            <td><button id="15" onclick="showDisplay(id)" class="names">15</button> Joy to the World</td>
-            <td><button id="25" onclick="showDisplay(id)" class="names">25</button> Peace on Earth</td>
-        </tr>
-        <tr>
-            <td><button id="06" onclick="showDisplay(id)" class="names">06</button> Silent Night</td>
-            <td><button id="16" onclick="showDisplay(id)" class="names">16</button> White Christmas</td>
-            <td><button id="26" onclick="showDisplay(id)" class="names">26</button> Frosty the Snowman</td>
-        </tr>
-        <tr>
-            <td><button id="07" onclick="showDisplay(id)" class="names">07</button> The Eight Polish Foods of Christmas</td>
-            <td><button id="17" onclick="showDisplay(id)" class="names">17</button> Ruldolph the Red-Nosed Reindeer</td>
-            <td><button id="27" onclick="showDisplay(id)" class="names">27</button> Here Comes Santa Claus</td>
-        </tr>
-        <tr>
-            <td><button id="08" onclick="showDisplay(id)" class="names">08</button> Oh Santa!</td>
-            <td><button id="18" onclick="showDisplay(id)" class="names">18</button> Blue Christmas</td>
-            <td><button id="28" onclick="showDisplay(id)" class="names">28</button> The Night Before Christmas</td>
-        </tr>
-        <tr>
-            <td><button id="09" onclick="showDisplay(id)" class="names">09</button> O Holy Night</td>
-            <td><button id="19" onclick="showDisplay(id)" class="names">19</button> Silver Bells</td>
-            <td><button id="29" onclick="showDisplay(id)" class="names">29</button> The Chipmunk Song (Christmas Don't Be Late)</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><button id="random" onclick="randomTrack(0, 30)" class="names">??</button> Random Song</td>
-            <td></td>
+            <td class="mode" id="single" onclick="clickS()">Single</td>
+            <td class="mode" id="multiple" onclick="clickM()">Playlist</td>
+            <td id="display">Select mode to start</td>
+            <td class="control" id="play" onclick="playAudio()"><img src="https://image.flaticon.com/icons/png/512/98/98795.png" width="70%" height="90%"></td>
+            <td class="control" id="stop" onclick="stopAudio()"><img src="https://static.vecteezy.com/system/resources/previews/001/209/957/non_2x/square-png.png" width="60%" height="90%"></button>
+            </td>
+            <td class="control" id="next" onclick="nextSong()"><img src="http://cdn.onlinewebfonts.com/svg/img_516158.png" width="70%" height="90%"></td>
+            <td id="coinI" onclick="insertCoin()" class="mode">Coin</td>
+            <td id="coinR" onclick="returnCoin()" class="mode">Return</td>
         </tr>
     </table>
 
-    <button id="coinI" onclick="insertCoin()" class="functions">Coin</button>
-    <button id="coinR" onclick="returnCoin()" class="functions">Return</button>
+    <table class="songLabels">
+        <tr>
+            <td id="songs"><button id="00" onclick="showDisplay(id)" class="names">00</button> Have Yourself A Merry Little Christmas</td>
+            <td id="songs"><button id="10" onclick="showDisplay(id)" class="names">10</button> God Rest Ye Merry Gentlemen</td>
+            <td id="songs"><button id="20" onclick="showDisplay(id)" class="names">20</button> Twelve Days of Christmas</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="01" onclick="showDisplay(id)" class="names">01</button> I Heard the Bells on Christmas Day</td>
+            <td id="songs"><button id="11" onclick="showDisplay(id)" class="names">11</button> Let It Snow</td>
+            <td id="songs"><button id="21" onclick="showDisplay(id)" class="names">21</button> Can't Believe It's Christmas</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="02" onclick="showDisplay(id)" class="names">02</button> So This Is Christmas</td>
+            <td id="songs"><button id="12" onclick="showDisplay(id)" class="names">12</button> Sleigh Ride</td>
+            <td id="songs"><button id="22" onclick="showDisplay(id)" class="names">22</button> Feliz Navidad</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="03" onclick="showDisplay(id)" class="names">03</button> Jingle Bells</td>
+            <td id="songs"><button id="13" onclick="showDisplay(id)" class="names">13</button> We Wish You A Merry Christmas</td>
+            <td id="songs"><button id="23" onclick="showDisplay(id)" class="names">23</button> Winter Wonderland</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="04" onclick="showDisplay(id)" class="names">04</button> Santa Claus Is Coming to Town</td>
+            <td id="songs"><button id="14" onclick="showDisplay(id)" class="names">14</button> Deck the Halls</td>
+            <td id="songs"><button id="24" onclick="showDisplay(id)" class="names">24</button> Carol of the Bells</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="05" onclick="showDisplay(id)" class="names">05</button> The Christmas Song (Chestnuts Roasting)</td>
+            <td id="songs"><button id="15" onclick="showDisplay(id)" class="names">15</button> Joy to the World</td>
+            <td id="songs"><button id="25" onclick="showDisplay(id)" class="names">25</button> Peace on Earth</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="06" onclick="showDisplay(id)" class="names">06</button> Silent Night</td>
+            <td id="songs"><button id="16" onclick="showDisplay(id)" class="names">16</button> White Christmas</td>
+            <td id="songs"><button id="26" onclick="showDisplay(id)" class="names">26</button> Frosty the Snowman</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="07" onclick="showDisplay(id)" class="names">07</button> The Eight Polish Foods of Christmas</td>
+            <td id="songs"><button id="17" onclick="showDisplay(id)" class="names">17</button> Ruldolph the Red-Nosed Reindeer</td>
+            <td id="songs"><button id="27" onclick="showDisplay(id)" class="names">27</button> Here Comes Santa Claus</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="08" onclick="showDisplay(id)" class="names">08</button> Oh Santa!</td>
+            <td id="songs"><button id="18" onclick="showDisplay(id)" class="names">18</button> Blue Christmas</td>
+            <td id="songs"><button id="28" onclick="showDisplay(id)" class="names">28</button> The Night Before Christmas</td>
+        </tr>
+        <tr>
+            <td id="songs"><button id="09" onclick="showDisplay(id)" class="names">09</button> O Holy Night</td>
+            <td id="songs"><button id="19" onclick="showDisplay(id)" class="names">19</button> Silver Bells</td>
+            <td id="songs"><button id="29" onclick="showDisplay(id)" class="names">29</button> The Chipmunk Song (Christmas Don't Be Late)</td>
+        </tr>
+        <tr>
+            <td id="songs"></td>
+            <td id="songs"><button id="random" onclick="randomTrack(0, 30)" class="names">??</button> Random Song</td>
+            <td id="songs"></td>
+        </tr>
+    </table>
 </body>
 
 </html>

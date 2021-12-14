@@ -97,12 +97,11 @@ function clickM() {
 
     let multiples = document.getElementById('multiple');
     multiples.style.backgroundColor = "#ffcc80";
-    display.innerHTML = "Multi-Track mode selected";
+    display.innerHTML = "Playlist mode selected";
     cM = true;
 
     mode = true;
 }
-
 
 function insertCoin() {
     if (mode == true) {
@@ -145,7 +144,6 @@ function returnCoin() {
         }
     }
 }
-
 
 function randomTrack(min, max) {
     if (mode == true) {

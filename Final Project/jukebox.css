@@ -1,26 +1,19 @@
 .functions {
     height: 5%;
-    width: 3%;
-    border-radius: 15%;
+    width: 65%;
+    border-radius: 10px;
     border: black;
     border-width: 2px;
     border-style: double;
-    background-color: #efeff5;
+    background-color: rgb(153, 152, 152);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    border-spacing: 10px 2px;
+    margin-bottom: 2%;
 }
 
-
-/* display */
-
-
-/* height: 5%; */
-
-
-/* background-color: #f2d9d9;   #e6f0ff; */
-
-td {
+#songs {
     border: black;
     width: 30%;
     height: 5%;
@@ -35,14 +28,13 @@ td {
     font-size: 120%;
 }
 
-table {
+.songLabels {
     margin-left: auto;
     margin-right: auto;
-    /* background-color: rgb(206, 206, 206); */
     background-color: rgb(153, 152, 152);
     width: 65%;
     height: 50%;
-    border: #663300;
+    border: black;
     border-width: 2px;
     border-style: solid;
     border-collapse: separate;
@@ -53,15 +45,11 @@ table {
 .names {
     border-radius: 45px;
     text-align: center;
-    /* width: 99%;
-    height: 95%; */
     height: 90%;
     width: 10%;
-    /* background-color: #ffebe6;*/
     border: black;
     border-width: 2px;
     border-style: double;
-    /* background-color: #efeff5; */
     background-color: rgb(12, 155, 7);
     white-space: nowrap;
     margin-right: 1%;
@@ -74,7 +62,7 @@ table {
     border-width: 2px;
     border-style: solid;
     background-color: seashell;
-    width: 65%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -85,69 +73,47 @@ table {
     font-size: 120%;
 }
 
-
-/* #play,
-#stop,
-#next {
-    position: relative;
-    left: 39%;
-    bottom: 1%;
-    height: 8%;
-    width: 6%;
-    margin-right: 0.5%;
-    margin-left: 0.5%;
-} */
-
-#play,
-#stop,
-#next {
-    position: relative;
-    left: 39%;
-    top: 2%;
-    height: 8%;
-    width: 6%;
-    margin-right: 0.5%;
-    margin-left: 0.5%;
-}
-
-
-/* .inner {
-    border: #663300;
-    width: 60%;
-    height: 75%;
-    border-width: 2px;
-    border-style: solid;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #d2a679;
-    border-radius: 10px;
-    column-count: 3;
-} */
-
 body {
     background-image: url(https://www.chelmsforddogassociation.org/media_uploads/snowflakes.gif);
     background-size: cover;
 }
 
-
-/* .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: DodgerBlue;
-    flex-direction: column;
-    height: 50%;
-    width: 70%;
-}
-
-.flex-container>div {
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-} */
-
 .title {
     margin-right: auto;
     margin-left: auto;
     padding-left: 20%;
-    padding-top: 1%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.mode {
+    border: black;
+    width: 5%;
+    height: 5%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: #efeff5;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.control {
+    border: black;
+    width: 5%;
+    height: 5%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgb(255, 208, 208);
+    font-size: 90%;
+    font-weight: bold;
 }
