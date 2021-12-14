@@ -252,7 +252,7 @@ function stopAudio() {
 }
 
 function nextSong() {
-    if (cM == true) {
+    if (cM == true & coins > 0) {
         music.pause();
         coins--;
         playing = false;
