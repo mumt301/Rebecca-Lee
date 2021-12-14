@@ -76,6 +76,9 @@
 body {
     background-image: url(https://www.chelmsforddogassociation.org/media_uploads/snowflakes.gif);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .title {
