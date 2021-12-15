@@ -79,7 +79,7 @@ function clickS() {
         let display = document.getElementById('display');
         let singles = document.getElementById('single');
         singles.style.backgroundColor = "#ffcc80";
-        display.innerHTML = "Single Track mode selected";
+        display.innerHTML = "Single Track mode selected, insert a coin select a song";
         cS = true;
 
         let multiples = document.getElementById('multiple');
@@ -100,7 +100,7 @@ function clickM() {
 
         let multiples = document.getElementById('multiple');
         multiples.style.backgroundColor = "#ffcc80";
-        display.innerHTML = "Playlist mode selected";
+        display.innerHTML = "Playlist mode selected, insert coin(s) to select song(s)";
         cM = true;
 
         mode = true;
@@ -199,7 +199,6 @@ function playAudio() {
                     // if (playing == false)
                     music = new Audio(songFiles[value]);
                     display.innerHTML = songNames[value];
-                    counter = -1;
                     coins = 0;
                     playing = true;
                     console.log(playing);
@@ -207,7 +206,7 @@ function playAudio() {
                     music.onended = function() {
                         playing = false;
                         console.log(playing);
-                        display.innerHTML = "";
+                        display.innerHTML = "Insert a coin to select a song";
                         songQueue = [];
                         let coin = document.getElementById('coinI');
                         coin.style.backgroundColor = "#efeff5"; // to fix
@@ -240,6 +239,7 @@ function playQueue() {
                     let coin = document.getElementById('coinI');
                     coin.style.backgroundColor = "#efeff5";
                     songlist = [];
+                    display.innerHTML = "Insert a coin to select a song";
                 }
             };
         }
@@ -273,6 +273,8 @@ function nextSong() {
             let coin = document.getElementById('coinI');
             coin.style.backgroundColor = "#efeff5";
             songlist = [];
+            let display = document.getElementById('display');
+            display.innerHTML = "Insert a coin to select a song";
         }
     }
 }
