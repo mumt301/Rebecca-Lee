@@ -12,3 +12,7 @@ There are two modes to choose from - Single Mode and Playlist Mode.  Essentially
 **Playlist Mode:** Up to 10 coins can be inserted at a time, and thus up to 10 songs can be played.  The Skip Song button allows for the next song to be played, stopping the audio for the current song and playing the audio for the next song.  The Stop button not only stops the current song, it will also *clear the playlist*.  If more songs are selected, only the last "coins" number of songs will be played.  If more coins are inserted than songs selected, after the playlist is done, the user can select "remaining amount of coins" songs or press Return to get the coins back.
 
 ## DEPENDENCIES
+
+No external stylesheets or libraries were used.  The appearance and display will vary depending on the OS, screen size, and aspect ratio.
+
+## SUPPORTED BROWSERS

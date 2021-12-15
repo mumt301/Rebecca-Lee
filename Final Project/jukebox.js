@@ -121,10 +121,14 @@ function insertCoin() {
                     display.innerHTML = "Coin already inserted, select a song"
                 }
             } else {
-                if (coins < 10) {
+                if (coins == 1) {
                     coins += 1;
                     console.log("Coins: " + coins);
                     display.innerHTML = "Select " + coins + " song"
+                } else if (coins < 10) {
+                    coins += 1;
+                    console.log("Coins: " + coins);
+                    display.innerHTML = "Select " + coins + " songs"
                 } else {
                     display.innerHTML = "Coin total maxed, select 10 song"
                 }
