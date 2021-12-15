@@ -58,7 +58,7 @@ let songFiles = {
     23: "music/20 Winter Wonderland.mp3",
     24: "music/Carol of the Bells.mp3",
     25: "music/02 Peace On Earth.mp3",
-    26: "music/01 Frosty the Snowman.mp3",
+    26: "music/01 Frosty The Snowman.mp3",
     27: "music/05 Here Comes Santa Claus.mp3",
     28: "music/05 The Night Before Christmas Song.mp3",
     29: "music/The Chipmunk Song.mp3"
