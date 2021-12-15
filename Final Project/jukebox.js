@@ -74,33 +74,37 @@ let songQueue = [];
 let songlist = []; // for Playlist mode only
 
 function clickS() {
-    //changes color of the buttons
-    let display = document.getElementById('display');
-    let singles = document.getElementById('single');
-    singles.style.backgroundColor = "#ffcc80";
-    display.innerHTML = "Single Track mode selected";
-    cS = true;
+    if (playing == false) {
+        //changes color of the buttons
+        let display = document.getElementById('display');
+        let singles = document.getElementById('single');
+        singles.style.backgroundColor = "#ffcc80";
+        display.innerHTML = "Single Track mode selected";
+        cS = true;
 
-    let multiples = document.getElementById('multiple');
-    multiples.style.backgroundColor = "#efeff5";
-    cM = false;
+        let multiples = document.getElementById('multiple');
+        multiples.style.backgroundColor = "#efeff5";
+        cM = false;
 
-    mode = true;
+        mode = true;
+    }
 }
 
 function clickM() {
-    //changes color of the buttons
-    let display = document.getElementById('display');
-    let singles = document.getElementById('single');
-    singles.style.backgroundColor = "#efeff5";
-    cS = false;
+    if (playing == false) {
+        //changes color of the buttons
+        let display = document.getElementById('display');
+        let singles = document.getElementById('single');
+        singles.style.backgroundColor = "#efeff5";
+        cS = false;
 
-    let multiples = document.getElementById('multiple');
-    multiples.style.backgroundColor = "#ffcc80";
-    display.innerHTML = "Playlist mode selected";
-    cM = true;
+        let multiples = document.getElementById('multiple');
+        multiples.style.backgroundColor = "#ffcc80";
+        display.innerHTML = "Playlist mode selected";
+        cM = true;
 
-    mode = true;
+        mode = true;
+    }
 }
 
 function insertCoin() {
