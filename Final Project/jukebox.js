@@ -72,6 +72,8 @@ let playing = false;
 let music = new Audio();
 let songQueue = [];
 let songlist = []; // for Playlist mode only
+let length = 0;
+let totalCoins = 0;
 
 function clickS() {
     if (playing == false && coins < 2) {
@@ -190,6 +192,8 @@ function playAudio() {
                         queue.push(songQueue[start]);
                         console.log(queue);
                         songlist = queue;
+                        length = songlist.length;
+                        totalCoins = coins;
                     }
                     playQueue();
                 }
@@ -200,7 +204,6 @@ function playAudio() {
                 } else {
                     let lastSelected = songQueue[songQueue.length - 1];
                     value = parseInt(lastSelected);
-                    // if (playing == false)
                     music = new Audio(songFiles[value]);
                     display.innerHTML = songNames[value];
                     coins = 0;
@@ -256,12 +259,16 @@ function stopAudio() {
         playing = false;
         songQueue = [];
         songlist = [];
-        coins = 0;
-        let coin = document.getElementById('coinI');
-        coin.style.backgroundColor = "#efeff5";
-        console.log(songQueue);
-        let display = document.getElementById('display');
-        display.innerHTML = "Insert a coin to select a song";
+        coins = totalCoins - length;
+        if (coins > 0) {
+            display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
+        } else {
+            let coin = document.getElementById('coinI');
+            coin.style.backgroundColor = "#efeff5";
+            console.log(songQueue);
+            let display = document.getElementById('display');
+            display.innerHTML = "Insert a coin to select a song";
+        }
     }
 }
 
@@ -279,8 +286,12 @@ function nextSong() {
             let coin = document.getElementById('coinI');
             coin.style.backgroundColor = "#efeff5";
             songlist = [];
-            let display = document.getElementById('display');
-            display.innerHTML = "Insert a coin to select a song";
+            if (songlist == [] && coins > 0) {
+                display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
+            } else {
+                let display = document.getElementById('display');
+                display.innerHTML = "Insert a coin to select a song";
+            }
         }
     }
 }
