@@ -217,6 +217,7 @@ function playAudio() {
 function playQueue() {
     if (playing == false) {
         let display = document.getElementById('display');
+        console.log(coins);
         if (songlist.length != 0) {
             let value = parseInt(songlist.shift());
             console.log(songlist);
@@ -228,10 +229,10 @@ function playQueue() {
                 coins--;
                 playing = false;
                 playQueue();
-                songlist = [];
                 if (coins == 0) {
                     let coin = document.getElementById('coinI');
                     coin.style.backgroundColor = "#efeff5";
+                    songlist = [];
                 }
             };
         }
@@ -261,6 +262,7 @@ function nextSong() {
         if (coins == 0) {
             let coin = document.getElementById('coinI');
             coin.style.backgroundColor = "#efeff5";
+            songlist = [];
         }
     }
 }
