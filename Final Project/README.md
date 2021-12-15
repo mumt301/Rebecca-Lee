@@ -17,9 +17,9 @@ No external stylesheets or libraries were used.  The appearance and display will
 
 ## SUPPORTED BROWSERS
 
-- Google Chrome  
-- Mozilla Firefox  
-- Microsoft Edge
+- Google Chrome (Version 96.0.4664.93)
+- Mozilla Firefox (Version 95.0) 
+- Microsoft Edge (Versuin 90.0.105.57)
 
 ## LICENSE
 
