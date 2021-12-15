@@ -43,7 +43,7 @@ let songFiles = {
     08: "music/Oh Santa!.mp3",
     09: "music/01 - O Holy Night.mp3",
     10: "music/05 - God Rest Ye Merry Gentlemen.mp3",
-    11: "music/11 Let it Snow!.mp3",
+    11: "music/11 Let It Snow!.mp3",
     12: "music/15 Sleigh Ride.mp3",
     13: "music/04 We Wish You A Merry Christmas.mp3",
     14: "music/03 Deck The Halls.mp3",
