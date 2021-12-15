@@ -233,6 +233,9 @@ function playQueue() {
                 coins--;
                 playing = false;
                 playQueue();
+                if (songlist == [] && coins > 0) {
+                    display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
+                }
                 if (coins == 0) {
                     let coin = document.getElementById('coinI');
                     coin.style.backgroundColor = "#efeff5";
@@ -263,6 +266,9 @@ function nextSong() {
         playing = false;
         playQueue();
         songQueue = [];
+        if (songlist == [] && coins > 0) {
+            display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
+        }
         if (coins == 0) {
             let coin = document.getElementById('coinI');
             coin.style.backgroundColor = "#efeff5";
