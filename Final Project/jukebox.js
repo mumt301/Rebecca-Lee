@@ -74,7 +74,7 @@ let songQueue = [];
 let songlist = []; // for Playlist mode only
 
 function clickS() {
-    if (playing == false) {
+    if (playing == false && coins < 2) {
         //changes color of the buttons
         let display = document.getElementById('display');
         let singles = document.getElementById('single');
@@ -121,7 +121,7 @@ function insertCoin() {
                     display.innerHTML = "Coin already inserted, select a song"
                 }
             } else {
-                if (coins == 1) {
+                if (coins == 0) {
                     coins += 1;
                     console.log("Coins: " + coins);
                     display.innerHTML = "Select " + coins + " song"
