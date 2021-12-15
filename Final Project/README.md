@@ -25,4 +25,4 @@ No external stylesheets or libraries were used.  The appearance and display will
 
 I do not own audio files and songs used for the Jukebox.  
 
-This project is licensed under the terms of the MIT license.  See [LICENSE] (LICENSE.md) for more details.
+This project is licensed under the terms of the MIT license.  See [LICENSE](LICENSE.md) for more details.
