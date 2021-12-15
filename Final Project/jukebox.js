@@ -100,7 +100,7 @@ function clickM() {
 
         let multiples = document.getElementById('multiple');
         multiples.style.backgroundColor = "#ffcc80";
-        display.innerHTML = "Playlist mode selected, insert coin to select song";
+        display.innerHTML = "Playlist mode selected, insert coins to select songs";
         cM = true;
 
         mode = true;
