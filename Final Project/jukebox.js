@@ -260,6 +260,8 @@ function stopAudio() {
         let coin = document.getElementById('coinI');
         coin.style.backgroundColor = "#efeff5";
         console.log(songQueue);
+        let display = document.getElementById('display');
+        display.innerHTML = "Insert a coin to select a song";
     }
 }
 

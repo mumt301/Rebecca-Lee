@@ -13,6 +13,6 @@ There are two modes to choose from - Single Mode and Playlist Mode.  Essentially
 
 ## DEPENDENCIES
 
-No external stylesheets or libraries were used.  The appearance and display will vary depending on the OS, screen size, and aspect ratio.
+No external stylesheets or libraries were used.  The appearance and display will vary depending on the OS, screen size, and aspect ratio. 
 
 ## SUPPORTED BROWSERS
