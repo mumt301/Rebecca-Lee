@@ -79,7 +79,7 @@ function clickS() {
         let display = document.getElementById('display');
         let singles = document.getElementById('single');
         singles.style.backgroundColor = "#ffcc80";
-        display.innerHTML = "Single Track mode selected, insert a coin select a song";
+        display.innerHTML = "Single mode selected, insert a coin to select a song";
         cS = true;
 
         let multiples = document.getElementById('multiple');
@@ -100,7 +100,7 @@ function clickM() {
 
         let multiples = document.getElementById('multiple');
         multiples.style.backgroundColor = "#ffcc80";
-        display.innerHTML = "Playlist mode selected, insert coin(s) to select song(s)";
+        display.innerHTML = "Playlist mode selected, insert coin to select song";
         cM = true;
 
         mode = true;
