@@ -203,31 +203,28 @@ function playAudio() {
                 if (coins == 0) {
                     display.innerHTML = "Insert a coin to select a song";
                 } else {
-                    let lastSelected = songQueue[songQueue.length - 1];
-                    value = parseInt(lastSelected);
-                    music = new Audio(songFiles[value]);
-                    display.innerHTML = songNames[value];
-                    coins = 0;
-                    playing = true;
-                    console.log(playing);
-                    music.play();
-                    music.onended = function() {
-                        playing = false;
+                    if (songQueue.length == 0) {
+                        display.innerHTML = "Select a song";
+                    } else {
+                        let lastSelected = songQueue[songQueue.length - 1];
+                        value = parseInt(lastSelected);
+                        music = new Audio(songFiles[value]);
+                        display.innerHTML = songNames[value];
+                        coins = 0;
+                        playing = true;
                         console.log(playing);
-                        display.innerHTML = "Insert a coin to select a song";
-                        songQueue = [];
-                        let coin = document.getElementById('coinI');
-                        coin.style.backgroundColor = "#efeff5"; // to fix
-                    };
+                        music.play();
+                        music.onended = function() {
+                            playing = false;
+                            console.log(playing);
+                            display.innerHTML = "Insert a coin to select a song";
+                            songQueue = [];
+                            let coin = document.getElementById('coinI');
+                            coin.style.backgroundColor = "#efeff5"; // to fix
+                        };
+                    }
                 }
             }
-        } else {
-            if (coins == 1) {
-                display.innerHTML = "Select a song";
-            } else {
-                display.innerHTML = "Select " + coins + " songs"
-            }
-
         }
     }
 }
@@ -246,9 +243,12 @@ function playQueue() {
             music.onended = function() {
                 coins--;
                 playing = false;
-                playQueue();
-                if (songlist == [] && coins > 0) {
-                    display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
+                if (songlist.length == 0 && coins > 0) {
+                    display.innerHTML = coins + " coins left, select " + coins + " songs or press Return";
+                } else if (songlist.length == 0 && coins > 0) {
+                    display.innerHTML = coins + " coin left, select " + coins + " song or press Return";
+                } else {
+                    playQueue();
                 }
                 if (coins == 0) {
                     let coin = document.getElementById('coinI');
@@ -269,7 +269,9 @@ function stopAudio() {
         songlist = [];
         coins = totalCoins - length;
         if (coins > 0) {
-            display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
+            display.innerHTML = coins + " coins left, select " + coins + " songs or press Return";
+        } else if (songlist == [] && coins > 0) {
+            display.innerHTML = coins + " coin left, select " + coins + " song or press Return";
         } else {
             let coin = document.getElementById('coinI');
             coin.style.backgroundColor = "#efeff5";
@@ -285,21 +287,25 @@ function nextSong() {
         music.pause();
         coins--;
         playing = false;
-        playQueue();
-        songQueue = [];
-        if (songlist == [] && coins > 0) {
-            display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
+        console.log("coins rem: " + coins);
+        console.log("empty: " + songlist == [])
+        if (songlist.length == 0 && coins > 1) {
+            display.innerHTML = coins + " coins left, select " + coins + " songs or press Return";
+        } else if (songlist.length == 0 && coins > 0) {
+            display.innerHTML = coins + " coin left, select " + coins + " song or press Return";
+        } else {
+            playQueue();
+            songQueue = [];
         }
+
         if (coins == 0) {
             let coin = document.getElementById('coinI');
             coin.style.backgroundColor = "#efeff5";
             songlist = [];
-            if (songlist == [] && coins > 0) {
-                display.innerHTML = coins + " coins left, select " + coins + " songs or press Return"
-            } else {
-                let display = document.getElementById('display');
-                display.innerHTML = "Insert a coin to select a song";
-            }
+            let display = document.getElementById('display');
+            display.innerHTML = "Insert a coin to select a song";
         }
+
+
     }
 }
