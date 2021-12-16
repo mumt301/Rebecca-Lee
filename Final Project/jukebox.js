@@ -150,6 +150,7 @@ function returnCoin() {
                 coin.style.backgroundColor = "#efeff5";
                 coins = 0;
                 display.innerHTML = "All coins returned, insert a coin to select a song"
+                songQueue = [];
             }
         }
     }
@@ -220,6 +221,13 @@ function playAudio() {
                     };
                 }
             }
+        } else {
+            if (coins == 1) {
+                display.innerHTML = "Select a song";
+            } else {
+                display.innerHTML = "Select " + coins + " songs"
+            }
+
         }
     }
 }
