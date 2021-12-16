@@ -76,7 +76,7 @@ let length = 0;
 let totalCoins = 0;
 
 function clickS() {
-    if (playing == false && coins != 0) {
+    if (playing == false && coins == 0) {
         //changes color of the buttons
         let display = document.getElementById('display');
         let singles = document.getElementById('single');
@@ -93,7 +93,7 @@ function clickS() {
 }
 
 function clickM() {
-    if (playing == false && coins != 0) {
+    if (playing == false && coins == 0) {
         //changes color of the buttons
         let display = document.getElementById('display');
         let singles = document.getElementById('single');
