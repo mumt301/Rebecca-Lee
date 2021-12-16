@@ -118,21 +118,21 @@ function insertCoin() {
             if (cS == true) {
                 if (coins < 1) {
                     coins += 1;
-                    display.innerHTML = "Select a song"
+                    display.innerHTML = "Select a song";
                 } else {
-                    display.innerHTML = "Coin already inserted, select a song"
+                    display.innerHTML = "Coin already inserted, select a song";
                 }
             } else {
                 if (coins == 0) {
                     coins += 1;
                     console.log("Coins: " + coins);
-                    display.innerHTML = "Select " + coins + " song"
+                    display.innerHTML = "Select " + coins + " song";
                 } else if (coins < 10) {
                     coins += 1;
                     console.log("Coins: " + coins);
-                    display.innerHTML = "Select " + coins + " songs"
+                    display.innerHTML = "Select " + coins + " songs";
                 } else {
-                    display.innerHTML = "Coin total maxed, select 10 song"
+                    display.innerHTML = "Coin total maxed, select 10 songs";
                 }
             }
         }
@@ -168,7 +168,7 @@ function showDisplay(id) {
         if (playing == false) {
             let display = document.getElementById('display');
             if (coins == 0) {
-                display.innerHTML = "Insert a coin to select a song"
+                display.innerHTML = "Insert a coin to select a song";
             } else {
                 let value = parseInt(id);
                 display.innerHTML = songNames[value];
@@ -181,9 +181,9 @@ function showDisplay(id) {
 
 function playAudio() {
     if (mode == true) {
-        if (playing == false && songQueue != []) {
+        if (playing == false && songQueue.length != 0) {
             if (cM == true) {
-                if (songQueue != []) {
+                if (songQueue.length != 0) {
                     let start = songQueue.length - coins;
                     if (songQueue.length < coins) {
                         start = 0;
@@ -220,7 +220,7 @@ function playAudio() {
                             display.innerHTML = "Insert a coin to select a song";
                             songQueue = [];
                             let coin = document.getElementById('coinI');
-                            coin.style.backgroundColor = "#efeff5"; // to fix
+                            coin.style.backgroundColor = "#efeff5";
                         };
                     }
                 }
@@ -243,7 +243,7 @@ function playQueue() {
             music.onended = function() {
                 coins--;
                 playing = false;
-                if (songlist.length == 0 && coins > 0) {
+                if (songlist.length == 0 && coins > 1) {
                     display.innerHTML = coins + " coins left, select " + coins + " songs or press Return";
                 } else if (songlist.length == 0 && coins > 0) {
                     display.innerHTML = coins + " coin left, select " + coins + " song or press Return";
@@ -268,9 +268,9 @@ function stopAudio() {
         songQueue = [];
         songlist = [];
         coins = totalCoins - length;
-        if (coins > 0) {
+        if (coins > 1) {
             display.innerHTML = coins + " coins left, select " + coins + " songs or press Return";
-        } else if (songlist == [] && coins > 0) {
+        } else if (songlist.length == 0 && coins > 0) {
             display.innerHTML = coins + " coin left, select " + coins + " song or press Return";
         } else {
             let coin = document.getElementById('coinI');
@@ -283,7 +283,7 @@ function stopAudio() {
 }
 
 function nextSong() {
-    if (cM == true && coins > 0) {
+    if (cM == true && songlist.length != 0) {
         music.pause();
         coins--;
         playing = false;
@@ -305,7 +305,5 @@ function nextSong() {
             let display = document.getElementById('display');
             display.innerHTML = "Insert a coin to select a song";
         }
-
-
     }
 }
