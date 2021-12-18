@@ -208,6 +208,8 @@ function playAudio() {
                     } else {
                         let lastSelected = songQueue[songQueue.length - 1];
                         value = parseInt(lastSelected);
+                        totalCoins = 1;
+                        length = 1;
                         music = new Audio(songFiles[value]);
                         display.innerHTML = songNames[value];
                         coins = 0;
